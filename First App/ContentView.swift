@@ -9,14 +9,17 @@ import SwiftUI
 
 struct ContentView: View {
     
+    private var movies: [Movie] = Movie.allMovies
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world! Thank you for seeing this").padding()
+        NavigationView{
+            List {
+                ForEach(movies , id: \.id) {
+                    movie in
+                    Text("(movie.title)")
+                }
+            }
         }
-        .padding()
     }
 }
 

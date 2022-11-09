@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		C07698F2291A0551009E3C67 /* tmdbMovies.json in Resources */ = {isa = PBXBuildFile; fileRef = C07698F1291A0551009E3C67 /* tmdbMovies.json */; };
 		C07698F4291A07F7009E3C67 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07698F3291A07F7009E3C67 /* Movie.swift */; };
-		C07698F6291A0C40009E3C67 /* MovieFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07698F5291A0C3F009E3C67 /* MovieFeed.swift */; };
 		C0AD26402904519C005C4A93 /* First_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AD263F2904519C005C4A93 /* First_AppApp.swift */; };
 		C0AD26422904519C005C4A93 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AD26412904519C005C4A93 /* ContentView.swift */; };
 		C0AD26442904519D005C4A93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0AD26432904519D005C4A93 /* Assets.xcassets */; };
@@ -19,7 +18,6 @@
 /* Begin PBXFileReference section */
 		C07698F1291A0551009E3C67 /* tmdbMovies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tmdbMovies.json; sourceTree = SOURCE_ROOT; };
 		C07698F3291A07F7009E3C67 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
-		C07698F5291A0C3F009E3C67 /* MovieFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieFeed.swift; sourceTree = "<group>"; };
 		C0AD263C2904519C005C4A93 /* First App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "First App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0AD263F2904519C005C4A93 /* First_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = First_AppApp.swift; sourceTree = "<group>"; };
 		C0AD26412904519C005C4A93 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,7 +60,6 @@
 				C0AD26412904519C005C4A93 /* ContentView.swift */,
 				C0AD26432904519D005C4A93 /* Assets.xcassets */,
 				C07698F3291A07F7009E3C67 /* Movie.swift */,
-				C07698F5291A0C3F009E3C67 /* MovieFeed.swift */,
 				C0AD26452904519D005C4A93 /* Preview Content */,
 			);
 			path = "First App";
@@ -149,7 +146,6 @@
 			files = (
 				C0AD26422904519C005C4A93 /* ContentView.swift in Sources */,
 				C0AD26402904519C005C4A93 /* First_AppApp.swift in Sources */,
-				C07698F6291A0C40009E3C67 /* MovieFeed.swift in Sources */,
 				C07698F4291A07F7009E3C67 /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
