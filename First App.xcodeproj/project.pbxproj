@@ -13,6 +13,7 @@
 		C0AD26422904519C005C4A93 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AD26412904519C005C4A93 /* ContentView.swift */; };
 		C0AD26442904519D005C4A93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0AD26432904519D005C4A93 /* Assets.xcassets */; };
 		C0AD26472904519D005C4A93 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0AD26462904519D005C4A93 /* Preview Assets.xcassets */; };
+		C0FCAFF9291CDFFE0053BC71 /* MovieCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FCAFF8291CDFFE0053BC71 /* MovieCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		C0AD26412904519C005C4A93 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C0AD26432904519D005C4A93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0AD26462904519D005C4A93 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C0FCAFF8291CDFFE0053BC71 /* MovieCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				C0AD26432904519D005C4A93 /* Assets.xcassets */,
 				C09F91E1291CC75200153F69 /* tmdbMovies.json */,
 				C07698F3291A07F7009E3C67 /* Movie.swift */,
+				C0FCAFF8291CDFFE0053BC71 /* MovieCard.swift */,
 				C0AD26452904519D005C4A93 /* Preview Content */,
 			);
 			path = "First App";
@@ -144,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0FCAFF9291CDFFE0053BC71 /* MovieCard.swift in Sources */,
 				C0AD26422904519C005C4A93 /* ContentView.swift in Sources */,
 				C0AD26402904519C005C4A93 /* First_AppApp.swift in Sources */,
 				C07698F4291A07F7009E3C67 /* Movie.swift in Sources */,
