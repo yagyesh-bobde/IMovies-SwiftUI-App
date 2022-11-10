@@ -9,14 +9,27 @@ import SwiftUI
 
 struct ContentView: View {
     
-    private var movies: [Movie] = Movie.allMovies
+    var movies: [Movie] = Movie.allMovies
+    var sampleMovie: Movie = Movie.sampleMovie
+    
     
     var body: some View {
+        Text("Hello, World")
         NavigationView{
             List {
                 ForEach(movies , id: \.id) {
                     movie in
-                    Text("(movie.title)")
+                    HStack{
+                        AsyncImage(url: URL(string: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/\(movie.poster_path ?? "")")
+                        )
+                        .scaledToFit()
+                        .frame(width: 10.0 , height: 10.0)
+                    }
+                    VStack{
+                        Text("\(movie.title ?? " ")")
+                        Text("\(movie.tagline ?? " ")")
+                    }
+                    
                 }
             }
         }

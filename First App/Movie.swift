@@ -33,8 +33,8 @@ struct Movie: Codable {
     
     
     
-    static let allMovies: [Movie] = Bundle.main.decode(file: "tmbdMovies.json")
-    static let samplePerson: Movie =  allMovies[0]
+    static let allMovies: [Movie] = Bundle.main.decode()
+    static let sampleMovie: Movie =  allMovies[0]
 }
 
 struct allIds: Codable {
@@ -57,10 +57,10 @@ struct people: Codable {
 
 
 extension Bundle {
-    func decode<T: Decodable>(file: String) -> T {
-        guard let url = self.url(forResource: file, withExtension: nil) else {
-            fatalError("")
-        }
+    func decode<T: Decodable>() -> T {
+        
+        let path: String? = Bundle.main.path(forResource: "tmdbMovies", ofType: "json")
+        let url = URL(fileURLWithPath: path!)
         
         guard let data = try? Data(contentsOf: url) else{
             fatalError()
@@ -71,6 +71,7 @@ extension Bundle {
         guard let loadedData = try? decoder.decode(T.self, from: data) else{
             fatalError()
         }
+
         
         return loadedData
     }
