@@ -20,7 +20,7 @@ struct MovieCard: View {
                     .resizable()
                     .frame(width:50, height: 50)
                     .scaledToFit()
-                    
+                    .padding(.trailing)
             },
                placeholder: {
                         ProgressView()
@@ -33,8 +33,6 @@ struct MovieCard: View {
                         .fontWeight(Font.Weight.light)
                         .foregroundColor(.gray)
                 }
-                Spacer()
-                Image(systemName: "chevron.right")
             }
             .frame(alignment:.trailing)
         }

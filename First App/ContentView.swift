@@ -19,13 +19,13 @@ struct ContentView: View {
                     List {
                         ForEach(movies , id: \.id) {
                             movie in
+                            NavigationLink(destination: MovieDetailView(movie: movie)){
                                 MovieCard(movie: movie)
-                            
+                            }
                         }
                 }.navigationTitle("Popular Movies")
                     
             }
-            .background(Color.white)
         }
     }
 }

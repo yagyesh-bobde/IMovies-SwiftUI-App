@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		793A59D8291E81B200A04B99 /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793A59D7291E81B200A04B99 /* MovieDetailView.swift */; };
 		C07698F4291A07F7009E3C67 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07698F3291A07F7009E3C67 /* Movie.swift */; };
 		C09F91E2291CC75200153F69 /* tmdbMovies.json in Resources */ = {isa = PBXBuildFile; fileRef = C09F91E1291CC75200153F69 /* tmdbMovies.json */; };
 		C0AD26402904519C005C4A93 /* First_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AD263F2904519C005C4A93 /* First_AppApp.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		793A59D7291E81B200A04B99 /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
 		C07698F3291A07F7009E3C67 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		C09F91E1291CC75200153F69 /* tmdbMovies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tmdbMovies.json; sourceTree = "<group>"; };
 		C0AD263C2904519C005C4A93 /* First App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "First App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,10 +61,11 @@
 			children = (
 				C0AD263F2904519C005C4A93 /* First_AppApp.swift */,
 				C0AD26412904519C005C4A93 /* ContentView.swift */,
-				C0AD26432904519D005C4A93 /* Assets.xcassets */,
-				C09F91E1291CC75200153F69 /* tmdbMovies.json */,
 				C07698F3291A07F7009E3C67 /* Movie.swift */,
 				C0FCAFF8291CDFFE0053BC71 /* MovieCard.swift */,
+				793A59D7291E81B200A04B99 /* MovieDetailView.swift */,
+				C0AD26432904519D005C4A93 /* Assets.xcassets */,
+				C09F91E1291CC75200153F69 /* tmdbMovies.json */,
 				C0AD26452904519D005C4A93 /* Preview Content */,
 			);
 			path = "First App";
@@ -147,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				793A59D8291E81B200A04B99 /* MovieDetailView.swift in Sources */,
 				C0FCAFF9291CDFFE0053BC71 /* MovieCard.swift in Sources */,
 				C0AD26422904519C005C4A93 /* ContentView.swift in Sources */,
 				C0AD26402904519C005C4A93 /* First_AppApp.swift in Sources */,
