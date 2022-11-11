@@ -21,7 +21,7 @@ struct MovieCard: View {
                         returnedImage
                         .resizable()
                         .frame(width:50, height: 50)
-                        .scaledToFit()
+                        
                 },
                    placeholder: {
                             ProgressView()
