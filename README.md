@@ -5,7 +5,7 @@ This is a sample project for the iOS Movie App challenge on Topcoder. The app is
 
 <!-- play output video -->
 <video width="100%" controls>
-  <source src="https://github.com/yagyesh-bobde/IMovies-SwiftUI-App/Video-Demo-Hard-Challenge.mp4" type="video/mp4">
+  <source src="https://github.com/yagyesh-bobde/IMovies-SwiftUI-App/blob/main/Video-Demo-Hard-Challenge.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
