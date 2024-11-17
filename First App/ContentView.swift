@@ -1,30 +1,25 @@
-//
-//  ContentView.swift
-//  First App
-//
-//  Created by Pranav Bobde on 22/10/22.
-//
 
 import SwiftUI
 
 struct ContentView: View {
     
-    var movies: [Movie] = Movie.allMovies
-    var sampleMovie: Movie = Movie.sampleMovie
+    @State var movies: [Movie] = []
     
     
     var body: some View {
-        ZStack{
             NavigationView{
-                    List {
-                        ForEach(movies , id: \.id) {
-                            movie in
-                            NavigationLink(destination: MovieDetailView(movie: movie)){
-                                MovieCard(movie: movie)
-                            }
+                List {
+                    ForEach(movies , id: \.id) {
+                        movie in
+                        NavigationLink(destination: MovieDetailView(movie: movie)){
+                            MovieCard(movie: movie)
                         }
-                }.navigationTitle("Popular Movies")
-                    
+                    }
+            }.navigationTitle("Popular Movies")
+            .onAppear{
+                API().decode { (movies) in // Calling the API
+                    self.movies = movies // Setting the movies state after API Call
+                }
             }
         }
     }

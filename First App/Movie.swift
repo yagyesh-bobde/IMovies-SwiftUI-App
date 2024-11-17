@@ -1,9 +1,3 @@
-//
-//  Movie.swift
-//  First App
-//
-//  Created by Pranav Bobde on 08/11/22.
-//
 
 import Foundation
 
@@ -31,10 +25,8 @@ struct Movie: Codable {
     var cast: [people]?
     var trailer_yt: String?
     
+//    Removed the variables from the easy and medium challenge
     
-    
-    static let allMovies: [Movie] = Bundle.main.decode()
-    static let sampleMovie: Movie =  allMovies[0]
 }
 
 struct allIds: Codable {
@@ -55,24 +47,3 @@ struct people: Codable {
 }
 
 
-
-extension Bundle {
-    func decode<T: Decodable>() -> T {
-        
-        let path: String? = Bundle.main.path(forResource: "tmdbMovies", ofType: "json")
-        let url = URL(fileURLWithPath: path!)
-        
-        guard let data = try? Data(contentsOf: url) else{
-            fatalError()
-        }
-        
-        let decoder = JSONDecoder()
-        
-        guard let loadedData = try? decoder.decode(T.self, from: data) else{
-            fatalError()
-        }
-
-        
-        return loadedData
-    }
-}

@@ -1,9 +1,3 @@
-//
-//  MovieCard.swift
-//  First App
-//
-//  Created by Pranav Bobde on 10/11/22.
-//
 
 import Foundation
 import SwiftUI

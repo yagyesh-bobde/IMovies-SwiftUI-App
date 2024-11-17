@@ -1,9 +1,4 @@
-//
-//  First_AppApp.swift
-//  First App
-//
-//  Created by Pranav Bobde on 22/10/22.
-//
+
 
 import SwiftUI
 
