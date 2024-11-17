@@ -4,12 +4,13 @@ This is a sample project for the iOS Movie App challenge on Topcoder. The app is
 ## Video Demo 
 
 <!-- play output video -->
-<video width="100%" controls>
-  <source src="https://github.com/yagyesh-bobde/IMovies-SwiftUI-App/blob/main/Video-Demo-Hard-Challenge.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+https://github.com/user-attachments/assets/b7942165-2f4e-41e9-b7a4-6d07e5acd7a2
+
 
 # Topcoder Skill Builder Competition | iOS Swift Development | Hard
+
+
+
 
 This README.md file contains the description of the submission files on this challenge.
 
